@@ -4,36 +4,29 @@
     <meta charset="UTF-8">
     <title>For You</title>
     <style>
-        body {
-            background-color: #121212; /* 暗色背景 */
-            font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
-            color: #f0f0f0;
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-color: #000; /* 全黑背景 */
+        }
+        .container {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            margin: 0;
+            height: 100%;
         }
-        .container {
-            text-align: left; /* 左对齐 */
-            padding: 40px;
-            border-radius: 12px;
-            background: #1e1e1e;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.5);
-            max-width: 700px;
-        }
-        .quote {
-            font-size: 22px;
-            line-height: 1.8;
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            background-color: #000;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="quote">
-            我愿意为你走出我的舒适区，一起去经历新的故事，<br>
-            一起感受平淡的日子，一起变得更坚定、更从容。
-        </div>
+        <img src="text.png" alt="Text">
     </div>
 </body>
 </html>
